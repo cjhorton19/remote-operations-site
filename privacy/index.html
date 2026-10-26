@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remote Operations Privacy Policy</title>
+<style>
+:root { color-scheme: light dark; --text: #1c1c1e; --muted: #5c5c60; --bg: #ffffff; }
+@media (prefers-color-scheme: dark) { :root { --text: #f2f2f7; --muted: #a1a1a6; --bg: #000000; } }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; line-height: 1.2; }
+h2 { font-size: 20px; margin-top: 32px; }
+.updated { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+<h1>Remote Operations Privacy Policy</h1>
+<p class="updated">Last updated: October 25, 2026</p>
+
+<p>Remote Operations is an iPhone and iPad app from Thorton LLC ("we"). It connects your device directly to a Mac that you own or are allowed to use. This policy tells you what the app keeps and where.</p>
+
+<h2>Summary</h2>
+<ul>
+<li>There is no account. You do not sign up with us.</li>
+<li>We do not run a server for this app. We do not collect, receive or sell your data.</li>
+<li>There are no ads, no tracking and no analytics.</li>
+<li>Your data stays on your device and on your own Mac.</li>
+</ul>
+
+<h2>How the app connects</h2>
+<p>The app connects from your device to your Mac over your own Tailscale network. It uses SSH (Remote Login on the Mac) and, for the desktop view, macOS Screen Sharing carried inside the SSH connection. The connection goes directly between your devices. It does not go through a server that we operate. Tailscale is a separate service with its own privacy policy.</p>
+
+<h2>What the app stores on your device</h2>
+<ul>
+<li><strong>Device profiles:</strong> the name, network address and account name of each Mac that you add. These are kept in a protected file inside the app on your device.</li>
+<li><strong>Saved sign-in (optional):</strong> if you turn on Remember sign-in, your Mac password is kept in this device's Keychain. Face ID or your device passcode is needed to use it. It is never synced to iCloud. You can remove it at any time with Forget saved sign-in.</li>
+<li><strong>Host key information:</strong> the public SSH host key that the app expects for your Mac, so it can check that it connects to the correct Mac. A public key is not a secret.</li>
+<li><strong>App preferences:</strong> small settings, such as which protection a saved sign-in uses.</li>
+</ul>
+<p>While you are connected, your password is held in memory for a short time so the app can reconnect. It is erased when you disconnect, when sign-in fails, or after 15 minutes in the background.</p>
+
+<h2>What the app does not do</h2>
+<ul>
+<li>It does not send your commands, screen, terminal output or clipboard to us or to any third party.</li>
+<li>It reads your clipboard only when you choose Paste, and it types that text on your Mac.</li>
+<li>It does not record your sessions.</li>
+<li>Its logs stay on your device and contain only event names and outcome codes, never addresses, account names, passwords, commands or screen content.</li>
+</ul>
+
+<h2>Deleting your data</h2>
+<p>Use Forget saved sign-in to remove a saved password. Delete the app to remove all of its data from your device. This does not change the settings on your Mac or your Tailscale network.</p>
+
+<h2>Children</h2>
+<p>The app is not directed to children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update this page and the date above.</p>
+
+<h2>Contact</h2>
+<p>Thorton LLC: <a href="mailto:thortonllc@gmail.com">thortonllc@gmail.com</a></p>
+</main>
+</body>
+</html>
